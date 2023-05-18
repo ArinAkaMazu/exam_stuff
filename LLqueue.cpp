@@ -64,6 +64,10 @@ void insert()
 		rear=ptr;
 		front->next=NULL;
 		rear->next=NULL;
+		{
+		rear->next=ptr;
+		rear=ptr;
+		rear->next=NULL;
 	}
 	}
 }
